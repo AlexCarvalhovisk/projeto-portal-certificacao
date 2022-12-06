@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/*Variáveis globais*/
+:root{
+    --cor0: rgba(123, 245, 9, 0.938);
+    --cor1: rgb(190, 16, 16);
+    --cor2: rgb(108, 212, 10);
+    --cor3: rgb(124, 243, 12);
+    --cor4: rgb(255, 255, 255);
+    --cor5: rgb(0, 0, 0);
+    --cor6: rgb(179, 10, 10);
+
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*Final das variáveis globais*/
+
+/*Corpo externo da página*/
+body{
+    background-color: var(--cor0);
+}
+
+/*Cabeçalho da página*/
+.one{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 4px;
+    background-color: var(--cor1);
+}
+
+header > picture > img{
+    position: absolute;
+    top: 4px;
+    min-height: 100px;
+    width: 100%;
+    height: 20%;
+}
+
+nav{
+    position: absolute;
+    top: 20%;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+    width: 100%;
+    text-align: right;
+    background-color: var(--cor1);
+    box-shadow: 0px 7px 9px #061b075d;
+
+}
+
+nav > a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav > a:hover{
+    background-color: var(--cor6);
+    transition: background-color .3s;
+}
+
+nav > a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: var(--cor5);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: .5s ease-in-out;
+}
+
+nav > a:hover::after{
+    width: 100%;
+
+
+}
+
+/*Término do cabeçalho*/
+
+/*Meio da página*/
+main{
+    position: absolute;
+    top: 26%;
+    left: 10%;
+    width: 73%;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    height: auto;
+    padding: 30px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
+    box-shadow: 3px 8px 9px #061b0746;
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px;
+}
+
+h2{
+    text-align: left;
+}
+
+p{
+    text-align: justify;
+    margin: 15px 0px;
+    text-indent: 30px; /*Recuo no início do parágrafo*/
+}
+
+form{
+    columns: 2;
+}
+
+label{
+    font-style: italic;
+    font-weight: bold;
+    font-family: var(--fonte-padrao);
+}
+
+input{
+    margin-top: 10px;
+    background-color: var(--cor3);
+    padding-left: 10px;
+    color: black;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+}
+
+select{
+    margin-top: 5px;
+    background-color: var(--cor3);
+    padding-left: 50px;
+    color: black;
+    border: none;
+    height: 35px;
+    outline: none;
+    border-radius: 8px;
+
+}
+
+form > p{
+    text-align: left;
+    margin: -15px;
+}
+
+table{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+button{
+    display: block;
+    background-color: var(--cor1);
+    font-size: 20px;
+    margin-top: 20px;
+    width: 15%;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+button:hover{
+    background-color: var(--cor6);
+    transition: background-color .3s;
+}
+
+
+/*Final do meio da página*/
+
+/*Rodapé da página*/
+footer{
+    position: absolute;
+    background-color: var(--cor1);
+    color: black;
+    top: 97%;
+    width: 100%;
+    text-align: center;
+}
+
+footer > p{
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 2px;
+}
+/*Final do rodapé da página*/

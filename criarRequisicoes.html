@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/SoLogoIF.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/alinhamento.css">
+    <title>Portal de Certificações</title>
+</head>
+    <body>
+        <!--Topo da página-->
+        <div class="one"></div><!--Div para criar a linha vermelha do topo-->
+        <header>
+            <picture>
+                <img src="./assets/images/logoIF.png" alt="Logo da instituição">
+            </picture>
+        </header>
+        <nav>
+                <a href="home.html">Home</a>
+                <a href="criarRequisicoes.html" target="_blank">Criar Requisições</a>
+                <a href="requisicoes.html" target="_blank">Requisições</a>
+                <a href="infoPessoais.html" target="_blank">Dados Pessoais</a>  
+        </nav>
+        <!--termino do topo da página-->
+
+        <!--Corpo da página-->
+        <main>
+            <h1>Criação de Requisições.</h1><br><br>
+            <h2>Preencha o formulário abaixo.</h2><br><br>
+            <form action="#" method="post" id="criaRequisicao">
+                
+                <label for="solicitacao">Escolha o tipo de solicitação:</label><br>
+                <select name="solicitacao" id="solicitacao">
+                    <option value=""></option>
+                    <option value="aproveitamento">Aproveitamento de estudo</option>
+                    <option value="conhecimento">Certificação de conhecimento</option>
+                </select><br><br>
+
+                <label for="curso">Curso matriculado:</label><br>
+                <select name="curso" id="curso">
+                    <option value=""></option>
+                    <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="eletronica">Eletrônica Industrial</option>
+                    <option value="lazer">Gestão Despostiva e de Lazer</option>
+                    <option value="portugues">Licenciatua em Letras Português e Espanhol</option>
+                    <option value="processos">Processos Gerenciais</option>
+                    <option value=""></option>
+                </select><br><br>
+
+                <label for="disciplina">Disciplina para aproveitamento/certificação:</label><br>
+                <select name="disciplina" id="disciplina">
+                    <option value=""></option>
+                    <option value="prog1">Programação 1</option>
+                    <option value="prog2">Programação 2</option>
+                    <option value="prog3">Programação 3</option>
+                </select><br><br>
+
+                <label for="disciplinaAnterior">Disciplina cursada anteriormente:</label><br>
+                <input type="text" name="disciplinaAnterior" id="disciplinaAnterior" placeholder="Informe o nome da disciplina" size="38" maxlength="55"><br><br>
+
+                <label for="arquivo">Anexe os documentos aqui: </label>
+                <input type="file" name="arquivo" id="arquivo"><br><br>
+                <p id="paragradoForm">Remover todos os itens</p>
+            </form>
+
+            <button id="voltar" class="esquerda">Voltar</button><br>
+            <button id="continuar" class="direita">Continuar</button>
+        </main>
+        <!--Final do corpo da página-->
+            
+        <!--Final da página-->
+        <footer>
+            <p>Site desenvolvido pelos alunos da Disciplina de DEV2 de 2022.</p>
+            <p>Todos os direitos reservados</p>
+        </footer>
+        <!--Término da página-->
+    </body>
+</html>
